@@ -1,4 +1,4 @@
-package com.example.sumeesh.hw1;
+package com.nbhirud.timeconverter;
 
 
 
@@ -15,6 +15,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.sumeesh.hw1.R;
 
 
 public class MainActivity extends AppCompatActivity {
