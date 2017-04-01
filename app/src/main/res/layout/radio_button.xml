@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sumeesh.hw1.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_Label_UTC"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="30sp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editTextHours"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginStart="40dp"
+        android:maxLength="2"
+        android:hint="Hours"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_Label_Colon"
+        android:id="@+id/textView2"
+        android:textSize="30sp"
+        android:layout_toStartOf="@+id/editTextMinutes"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_toLeftOf="@+id/editTextMinutes" />
+
+    <EditText
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editTextMinutes"
+        android:layout_alignTop="@+id/editTextHours"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:maxLength="2"
+        android:hint="Minutes"
+        android:textSize="30sp" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_buttonRadio"
+        android:id="@+id/switchButtonRadio"
+        android:layout_below="@+id/editTextHours"
+        android:textSize="30sp"
+        android:checked="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewResult"
+        android:layout_below="@+id/switchButtonRadio"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Result:"
+        android:textSize="25sp"
+        android:text="@string/textView_Result_Label" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textView_Label_PreviousDay"
+        android:id="@+id/textView_PrevDay"
+        android:textColor="#ff0000"
+        android:textSize="25sp"
+        android:layout_below="@+id/switchButtonRadio"
+        android:layout_marginStart="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/button_Convert_Label"
+        android:id="@+id/buttonConvert"
+        android:layout_gravity="center_horizontal"
+        android:layout_toEndOf="@+id/textView_PrevDay"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textViewResult"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/buttonConvert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_EST"
+            android:id="@+id/radioButtonEST"
+            android:textSize="25sp"
+            android:checked="true"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_CST"
+            android:id="@+id/radioButtonCST"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_MST"
+            android:id="@+id/radioButtonMST"
+            android:textSize="23sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_PST"
+            android:id="@+id/radioButtonPST"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_ClearAll"
+            android:id="@+id/radioButtonClear"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+</RelativeLayout>

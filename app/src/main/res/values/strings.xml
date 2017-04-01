@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HW1</string>
+    <string name="text_Label_UTC">UTC:</string>
+    <string name="text_Label_Colon">:</string>
+    <string name="text_label_buttonRadio">Button/Radio:</string>
+    <string name="button_EST">Eastern Standard Time (EST)</string>
+    <string name="button_CST">Central Standard Time (CST)</string>
+    <string name="button_MST">Mountain Standard Time (MST)</string>
+    <string name="button_PST">Pacific Standard Time (PST)</string>
+    <string name="button_ClearAll">Clear All</string>
+    <string name="textView_Result_Label">Result:</string>
+    <string name="textView_Label_PreviousDay" />
+    <string name="editText_Hours_Label">Hours</string>
+    <string name="editText_Min_Label">Minutes</string>
+    <string name="Result_Label">Result:</string>
+    <string name="button_Convert_Label">Convert</string>
+</resources>
