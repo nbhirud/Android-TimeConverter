@@ -15,7 +15,7 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sumeesh.hw1.R;
+import com.nbhirud.timeconverter.R;
 
 
 public class MainActivity extends AppCompatActivity {
